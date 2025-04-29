@@ -21,7 +21,7 @@ flowchart LR
     PEP -->|2. 認可リクエスト| PDP
     PDP -->|3. ポリシー評価| PS
     PS -->|4. 評価結果| PDP
-    PDP -->|5. 認可レスポンス\n(許可/拒否)| PEP
+    PDP -->|"5. 認可レスポンス\n(許可/拒否)"| PEP
     PEP -->|6. アクセス許可/拒否| User
 ```
 
@@ -205,3 +205,4 @@ flowchart TD
     AllResults --> End([終了])
     ReturnDeny --> End
     ReturnPermit --> End
+```

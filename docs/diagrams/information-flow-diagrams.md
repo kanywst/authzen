@@ -222,3 +222,4 @@ sequenceDiagram
     PEP->>+PDP: POST /access/v1/evaluation HTTP/1.1<br>Host: pdp.example.com<br>Authorization: Bearer token123<br>Content-Type: application/json<br><br>{subject, resource, action, context}
     
     PDP-->>-PEP: HTTP/1.1 200 OK<br>Content-Type: application/json<br><br>{decision: true}
+```
