@@ -20,11 +20,11 @@ flowchart TD
         PS["ポリシーストア"]
     end
     
-    PEP -->|1. HTTPS通信| TLS
-    TLS -->|2. 暗号化解除| Auth
-    Auth -->|3. 認証確認| RateLimit
-    RateLimit -->|4. レート制限確認| PDP
-    PDP <-->|5. ポリシー参照| PS
+    PEP --|1. HTTPS通信|--> TLS
+    TLS --|2. 暗号化解除|--> Auth
+    Auth --|3. 認証確認|--> RateLimit
+    RateLimit --|4. レート制限確認|--> PDP
+    PDP <--|5. ポリシー参照|--> PS
 ```
 
 ## 2. 認証メカニズム
