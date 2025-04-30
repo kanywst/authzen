@@ -11,7 +11,7 @@ flowchart TD
     subgraph "クライアント側"
         PEP["Policy Enforcement Point\n(PEP)"]
     end
-    
+
     subgraph "サーバー側"
         TLS["TLS終端"]
         Auth["認証レイヤー"]
@@ -19,7 +19,7 @@ flowchart TD
         PDP["Policy Decision Point\n(PDP)"]
         PS["ポリシーストア"]
     end
-    
+
     PEP --|1. HTTPS通信|--> TLS
     TLS --|2. 暗号化解除|--> Auth
     Auth --|3. 認証確認|--> RateLimit
